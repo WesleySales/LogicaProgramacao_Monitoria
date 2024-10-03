@@ -22,7 +22,7 @@ int main() {
 ## 2. Conversão de Temperatura
 - **Descrição**: Criar um programa que converta uma temperatura de Celsius para Fahrenheit. A fórmula é:  
 \[
-F = C 	imes rac{9}{5} + 32
+F = C x 1,8 + 32
 \]
 - **Exemplo de resposta**:
 <details>
@@ -33,7 +33,7 @@ F = C 	imes rac{9}{5} + 32
 
 int main() {
     float celsius = 25;
-    float fahrenheit = celsius * 9 / 5 + 32;
+    float fahrenheit = celsius x 1,8 + 32;
     printf("%.2f Celsius é igual a %.2f Fahrenheit\n", celsius, fahrenheit);
     return 0;
 }
@@ -98,29 +98,8 @@ int main() {
 ```
 </details>
 
-## 6. Cálculo de Volume de um Cilindro
-- **Descrição**: Solicite o cálculo do volume de um cilindro, dado o raio da base e a altura. A fórmula é:  
-\[
-V = \pi 	imes r^2 	imes h
-\]
-- **Exemplo de resposta**:
-<details>
-  <summary>Clique aqui para ver a solução</summary>
 
-```c
-#include <stdio.h>
-#include <math.h>
-
-int main() {
-    float raio = 3, altura = 5;
-    float volume = M_PI * pow(raio, 2) * altura;
-    printf("Volume do cilindro: %.2f\n", volume);
-    return 0;
-}
-```
-</details>
-
-## 7. Verificação de Par ou Ímpar
+## 6. Verificação de Par ou Ímpar
 - **Descrição**: Crie um programa que leia um número e determine se ele é par ou ímpar.
 - **Exemplo de resposta**:
 <details>
