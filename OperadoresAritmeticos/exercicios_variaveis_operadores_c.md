@@ -1,5 +1,41 @@
 
-# Exercícios - Variáveis e Operadores Aritméticos (C)
+# Variáveis e Operadores Aritméticos 
+
+### 1. O que são variáveis:
+
+Na programação, uma variável é um espaço na memória do computador que armazena valores ou expressões, e que pode ser alterado durante a execução do programa:
+- A cada variável é atribuído um nome descritivo, ou identificador, que se refere ao valor salvo 
+- As variáveis podem ser globais (quando declaradas fora do escopo de alguma função/estrutura) ou locais (quando declaradas no escopo de uma função)
+- As variáveis podem ser números, textos ou valores booleanos 
+- A cada atualização do valor, substitui-se o valor anterior pelo novo valor
+
+
+![image](https://github.com/user-attachments/assets/42926a16-cec3-4a37-900d-95cf48ee92e6)
+
+Uma característica da linguagem C é que não existe o tipo de variável String (cadeia no portugol), mas é possível trabalhar com String utilizando uma cadeia de caracteres como **char[50]**.
+
+### 2. Declaração de Variáveis: 
+A estrutura de declaração de variáveis é bem simples: **Tipo da Variável** + **Nome/Identificador**. Mas é preciso se atentar a alguns detalhes
+- **Escolha um tipo de variável de acordo com o problema**: *float e double aparentemente são a mesma coisa, porém double reserva um espaço maior em memória que em algumas casos pode ser desnecessário.
+- Defina o nome de forma coerente para que qualquer um seja capaz de entender do que se trata sua variável só de ler. Não declare sua variável como **'X ou Y'**, isso torna a leitura confusa para terceiros e até para você futuramente.
+
+```c
+    //Calcula a media entre 3 notas de um aluno;
+    int x = 10; y = 7, z = 8;
+    float h = (x + y + z) / 3.0;
+    printf("A média é: %.2f\n", h);
+
+    //Calcula a media entre 3 notas de um aluno;
+    int nota1 = 10, nota2 = 7, nota3 = 8;
+    float media = (nota1 + nota2 + nota3) / 3.0;
+    printf("A média é: %.2f\n", media);
+}
+```
+É natural pensar que por ser um problema pequeno isso não interfere e, tendo em vista o apenas o resultado, realmente não interfere. Os dois códigos funcionam.
+Mas imagine uma aplicação real e robusta cheia de variáveis 'x' e 'y', quanto tempo seria gasto apenas para decifrar o funcionamento... Portando comece a exercitar essa boa prática desde já.
+-- Bônus: utilize comentários.
+
+## Exercícios
 
 ## 1. Cálculo da Média
 - **Descrição**: Solicite ao aluno que crie um programa que leia três números inteiros e calcule a média aritmética entre eles.
